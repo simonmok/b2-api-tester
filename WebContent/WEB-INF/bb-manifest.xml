@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<manifest>
+  <plugin>
+    <name value="Java Developer"/>
+    <handle value="java"/>
+    <description value="Building block for Java Developer system tool"/>
+    <version value="${plugin.version}"/>
+    
+    <requires>
+    	<bbversion value="9.1.4"/>
+    </requires>
+    
+    <vendor>
+		<id value="bnhk"/>
+		<name value="BEENET"/>
+		<url value="http://www.bee-net.com"/>
+		<description value="BEENET Hong Kong"/>
+    </vendor>
+
+	<http-actions>
+		<config value="links/config.jsp"/>
+	</http-actions>
+
+    <application-defs>
+      <application handle="javatool" type="shared" use-ssl="false" name="dbtool" can-allow-guest="true">
+        <description>Java Developer</description>
+        <links>
+          <link>
+            <type value="system_tool"/>
+            <name value="Java Developer"/>
+            <url value="links/developer.jsp"/>
+            <description value="Allows administrators to test Java codes"/>
+          </link>
+         </links>
+      </application>
+    </application-defs>
+
+	<permissions>
+		<permission name="user.authinfo" type="attribute" actions="set" />
+		<permission name="user.personalinfo" type="attribute" actions="set" />
+		<permission type="java.util.PropertyPermission" name="*" actions="read,write" />
+		<permission type="java.util.PropertyPermission" name="user.name" actions="read" />
+		<permission type="java.util.PropertyPermission" name="javax.wsdl.factory.WSDLFactory" actions="write" />
+		<permission type="java.util.PropertyPermission" name="java.protocol.handler.pkgs" actions="write" />
+		<permission name="user" type="blackboard.persist.PersistPermission" actions="create,modify" />
+		<permission name="user.authinfo" type="blackboard.data.AttributePermission" actions="set,get" />
+		<permission name="user.personalinfo" type="blackboard.data.AttributePermission" actions="set,get" />
+		<permission type="runtime" name="createClassLoader" actions="" />
+		<permission type="runtime" name="setFactory" actions="" />
+		<permission type="runtime" name="getClassLoader" actions="" />
+		<permission type="runtime" name="accessDeclaredMembers" actions="" />
+		<permission type="socket" name="*" actions="connect,resolve" />
+		<permission type="java.lang.RuntimePermission" name="db.connection.*" />
+		<permission type="java.io.FilePermission" name="&lt;&lt;ALL FILES&gt;&gt;" actions="execute"/>
+		<permission type="java.io.FilePermission" name="/" actions="read,write" />
+		<permission type="java.io.FilePermission" name="/-" actions="read,write,delete,execute" />
+		<permission type="java.io.FilePermission" name="&amp;lt;&amp;lt;ALL FILES&amp;gt;&amp;gt;" actions="read,write,delete" />
+	</permissions>
+
+  </plugin>
+</manifest>

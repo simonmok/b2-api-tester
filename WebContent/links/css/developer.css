@@ -1,0 +1,134 @@
+.code span {
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+.code {
+	border: 1px solid #ddd;
+	padding: 10px;
+	padding-left: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: -5px -5px 5px 5px #888;
+	-webkit-box-shadow: -5px -5px 5px 5px #888;
+	box-shadow: -1px -1px 2px 2px rgb(228, 228, 228);
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#class-start {
+	padding-top: 15px;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+#psvm-start {
+	padding-top: 15px;
+	padding-left: 30px;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+#psvm-end {
+	padding-left: 30px;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+#class-end {
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+#psvm-code {
+	padding-top: 10px;
+	padding-left: 60px;
+}
+
+input.add-code {
+	margin-left: 30px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#methods-text, #code, #example {
+	width: 760px;
+	max-width: 96.8%;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#methods-text, #code, #example {
+	min-height: 150px;
+}
+
+.remove-methods {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pad-top {
+	padding-top: 10px;
+}
+
+#arguments {
+	width: 40%;
+}
+
+.label {
+	width: 100px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 12px;
+	line-height: 24px;
+	margin-right: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.keyword {
+	color: #C800A4;
+	font-weight: bold;
+}
+
+#method-body textarea {
+	margin-left: 15px;
+	width: 775px;
+	max-width: 95%;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+input.button {
+	border-radius: 3px;
+    background: #cfcfcf;
+	background-image: -webkit-gradient(linear,0 0,0 90%,from(#efefef),to(#cfcfcf));
+	border: 1px solid #bbb;
+	color: #333;
+    font-size: 105%;
+    padding: 6px 16px 7px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+}
+
+input.confirm {
+    border-radius: 3px;
+    background: #0099b6;
+    background-image: -webkit-gradient(linear,0 0,0 90%,from(#0099b6),to(#076d88));
+    border: 1px solid #076d88;
+    color: #fff;
+    font-size: 105%;
+	padding: 6px 16px 7px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
+}
+
+img.download-icon {
+	width: 30px;
+	float: right;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+img.flip-180 {
+	transform: rotate(180deg);
+}
